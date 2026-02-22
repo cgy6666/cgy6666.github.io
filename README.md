@@ -1,3 +1,1 @@
-# pianfan.github.io
-
-My Personal Blog via GitHub
+# 这是小群一号官方博客的存放仓库
