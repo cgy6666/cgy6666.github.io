@@ -1,5 +1,5 @@
-name: "Pianfan's blog"
-description: "翩帆的个人技术博客"
+name: "xqyh's blog"
+description: "小群一号的官方博客"
 
 avatar: https://pianfan.github.io/images/avatar.png
 favicon: https://pianfan.github.io/images/favicon.ico
@@ -18,16 +18,16 @@ excerpt_separator: <!-- more -->
 
 footer-links:
   zhihu: 
-  email: xiongyunhan@outlook.com
+  email: 2304342691@qq.com
   facebook:
-  github: pianfan
+  github: cgy6666
   rss: welcome!
   twitter: 
   youtube:
 
-footer-text: Copyright (c) 2024-2025 Pianfan
+footer-text: Copyright (c) 2026 FIRESTAR
 
-url: https://pianfan.github.io
+url: https://cgy6666.github.io
 
 permalink: /:title/
 paginate_path: /page:num/
