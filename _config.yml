@@ -35,7 +35,7 @@ paginate_path: /page:num/
 # Gitalk
 gitalk:
   clientID: Ov23liVPo6tZwZ0aylrq
-  clientSecret: 1d869850fa1ce782a6e598030710cff2420bcbb2
+  clientSecret: de2653582d4df67dd7e1d81f31d08da2749c70b2
   repo: cgy6666.github.io
   owner: cgy6666
 
