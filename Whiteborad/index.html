@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交互式白板</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #canvas {
+            touch-action: none;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .tool-btn.active {
+            @apply bg-blue-100 border-blue-400;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <h1 class="text-2xl font-bold">交互式白板</h1>
+    </header>
+    
+    <div class="flex flex-1 overflow-hidden">
+        <!-- 左侧工具栏 -->
+        <div class="w-16 bg-white shadow-md flex flex-col items-center py-4 space-y-4">
+            <button id="pencil" class="tool-btn active w-12 h-12 rounded-lg border-2 flex items-center justify-center">
+                <i class="fas fa-pencil-alt text-xl"></i>
+            </button>
+            <button id="eraser" class="tool-btn w-12 h-12 rounded-lg border-2 flex items-center justify-center">
+                <i class="fas fa-eraser text-xl"></i>
+            </button>
+            <button id="clear" class="tool-btn w-12 h-12 rounded-lg border-2 flex items-center justify-center">
+                <i class="fas fa-trash-alt text-xl"></i>
+            </button>
+            <button id="undo" class="tool-btn w-12 h-12 rounded-lg border-2 flex items-center justify-center">
+                <i class="fas fa-undo text-xl"></i>
+            </button>
+            <button id="redo" class="tool-btn w-12 h-12 rounded-lg border-2 flex items-center justify-center">
+                <i class="fas fa-redo text-xl"></i>
+            </button>
+            <button id="save" class="tool-btn w-12 h-12 rounded-lg border-2 flex items-center justify-center">
+                <i class="fas fa-save text-xl"></i>
+            </button>
+        </div>
+
+        <!-- 右侧属性面板 -->
+        <div class="w-48 bg-white shadow-md p-4 flex flex-col space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700">画笔颜色</label>
+                <input type="color" id="colorPicker" value="#000000" class="w-full h-10">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">画笔粗细</label>
+                <input type="range" id="brushSize" min="1" max="50" value="5" class="w-full">
+                <span id="brushSizeValue" class="text-xs text-gray-500">5px</span>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">不透明度</label>
+                <input type="range" id="opacity" min="10" max="100" value="100" class="w-full">
+                <span id="opacityValue" class="text-xs text-gray-500">100%</span>
+            </div>
+        </div>
+
+        <!-- 主画布区域 -->
+        <div class="flex-1 relative overflow-auto p-4">
+            <canvas id="canvas" class="border border-gray-300"></canvas>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
