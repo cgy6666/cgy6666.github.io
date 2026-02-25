@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+[![](https://shici.amlg.top/api/image/screen/all)](https://shici.amlg.top/)
 ## 关于小群一号
 
 你好，这里是[小群一号](https://www.luogu.com.cn/team/75141)的官方博客，目前是一个洛谷团队。
