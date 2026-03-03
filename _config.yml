@@ -36,7 +36,7 @@ paginate_path: /page:num/
 gitalk:
   clientID: Ov23liVPo6tZwZ0aylrq
   clientSecret: de2653582d4df67dd7e1d81f31d08da2749c70b2
-  repo: cgy6666.github.io
+  repo: xqyhcc.qzz.io
   owner: cgy6666
 
 # The release of Jekyll Now
